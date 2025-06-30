@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-upper">
+            <div class="array-inputs">
+                <div class="ranges">
+                    <p>SIZE OF ARRAY: </p>
+                    <input id="arr_size" type="range" min=5 max=80 step=1 value=20>
+                </div>
+                <div class="ranges">
+                    <p>SPEED OF ALGORITHM: </p>
+                    <input id="arr_speed" type="range" min=1 max=5 step=1 value=3>
+                </div>
+                <button id="arr_generate">GENERATE NEW ARRAY</button>
+            </div>
+            <div class="nav-right">
+                <div class="heading">
+                    SORTING VISUALIZER
+                </div>
+                <div class="sorts">
+                    <div class="asce">
+                        <button>BUBBLE-A</button>
+                        <button>MERGE-A</button>
+                        <button>QUICK-A</button>
+                        <button>SELECTION-A</button>
+                        <button>INSERTION-A</button>
+                    </div>
+                    <div class="desc">
+                        <button>BUBBLE-D</button>
+                        <button>MERGE-D</button>
+                        <button>QUICK-D</button>
+                        <button>SELECTION-D</button>
+                        <button>INSERTION-D</button>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </header>
+    <div class="big-cont">
+        <div class="complexity">
+            <div class="time" >
+                <h2>TIME COMPLEXITY</h2>
+                <div>
+                    BEST CASE:
+                    <p id="bestt"></p>
+                </div>
+                <div>
+                    AVERAGE CASE:
+                    <p id="avgt"></p>
+                </div>
+                <div>
+                    WORST CASE:
+                    <p id="worstt"></p>
+                </div>
+            </div>
+        </div>
+        <div id="visualizer">
+
+        </div>
+        <div class="complexity">
+            <div class="space">
+                <div id="spacecompx">
+                    <h2>SPACE COMPLEXITY</h2>
+                    <div>
+                        BEST CASE:
+                        <p id="bests"></p>
+                    </div>
+                    <div>
+                        AVERAGE CASE:
+                        <p id="avgs"></p>
+                    </div>
+                    <div>
+                        WORST CASE:
+                        <p id="worsts"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./animation.js"></script>
+
+    <script src="./bubble.js"></script>
+    <script src="./merge.js"></script>  
+    <script src="./selection.js"></script>  
+    <script src="./insertion.js"></script>
+    <script src="./quick.js"></script>
+
+    <script src="./bubble_d.js"></script>
+    <script src="./merge_d.js"></script>
+    <script src="./quick_d.js"></script>
+    <script src="./selection_d.js"></script>
+    <script src="./insertion_d.js"></script>
+</body>
+</html>
